@@ -1,0 +1,14 @@
+dials = []
+single = []
+k = 3 #number of dials
+for i in range(0,k):#put all the dials into a list
+    for n in range(1,5): #create a dial
+        single.append(n)
+    dials.append(single.copy())
+    single.clear()
+for d in dials:
+    print(d)
+
+#what does it mean to 'rotate' two dials? It means to change the position
+#of each number by 1
+#How many possible configurations are possible?
